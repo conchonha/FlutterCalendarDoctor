@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/auto_text_size.dart';
 import '../../constants/app_color.dart';
 import '../../constants/app_dimens.dart';
-import '../../resource/app_style.dart';
 import 'common_action.dart';
 import 'common_data.dart';
 
