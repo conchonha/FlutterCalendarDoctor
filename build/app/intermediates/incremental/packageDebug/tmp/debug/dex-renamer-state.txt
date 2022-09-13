@@ -1,0 +1,4 @@
+#Tue Sep 13 00:04:20 ICT 2022
+base.0=/Users/thaisang/Documents/flutter/flutter_calendar_bacsy/flutter_base/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
