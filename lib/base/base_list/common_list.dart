@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../components/auto_text_size.dart';
+import '../../components/auto_size_text.dart';
 import '../../constants/app_color.dart';
 import '../../constants/app_dimens.dart';
 import 'common_action.dart';
@@ -25,7 +24,9 @@ class CommonListItem<T extends CommonData> extends StatelessWidget {
       onLongPress: () {
         iAction.onLongClickListener(commonData);
       },
-      child: _getWidgetType,
+      child: Padding(
+          padding: const EdgeInsets.only(top: AppDP.dp_7),
+          child: _getWidgetType),
     );
   }
 
@@ -41,48 +42,56 @@ class CommonListItem<T extends CommonData> extends StatelessWidget {
   }
 
   Widget get _typeListArrowPreview => Row(
-    mainAxisSize: MainAxisSize.max,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      Container(
-        width: AppDP.dp_5,
-        height: AppDP.dp_5,
-        margin: const EdgeInsets.only(right: AppDP.dp_5,top: AppDP.dp_7,bottom: AppDP.dp_7),
-        decoration: BoxDecoration(
-            color: commonData.leadingColor, shape: BoxShape.circle),
-      ),
-      autoTextSize(commonData.title,
-          textAlign: TextAlign.start,
-          textStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: AppColor.h00cccc,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: AppDP.dp_5,
+            height: AppDP.dp_5,
+            margin: const EdgeInsets.only(
+                right: AppDP.dp_5, top: AppDP.dp_7, bottom: AppDP.dp_7),
+            decoration: BoxDecoration(
+                color: commonData.leadingColor, shape: BoxShape.circle),
+          ),
+          Expanded(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              autoTextSize(commonData.title,
+                  textAlign: TextAlign.start,
+                  textStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: AppColor.h00cccc,
+                      )),
+              autoTextSize(commonData.subTitle,
+                  textAlign: TextAlign.start,
+                  textStyle: Theme.of(context).textTheme.displayMedium)
+            ],
           ))
-    ],
-  );
+        ],
+      );
 
   Widget get _typeCheckBox => Row(
-    children: [
-      Container(
-          width: AppDP.dp_4,
-          height: AppDP.dp_4,
-          margin: const EdgeInsets.symmetric(horizontal: AppDP.dp_4,vertical: AppDP.dp_7),
-          child: Transform.scale(
-            scale: 0.4,
-            child: Checkbox(
-              onChanged: (value){
-                commonData.isChecked = value!;
-                iAction.onCheckedListener(commonData);
-              },
-              value: commonData.isChecked,
-            ),
-          )),
-      Expanded(child: autoTextSize(" ${commonData.title}",
-          textAlign: TextAlign.start,
-          textStyle: Theme.of(context)
-              .textTheme
-              .bodySmall)),
-    ],
-  );
+        children: [
+          Container(
+              width: AppDP.dp_7,
+              height: AppDP.dp_7,
+              margin: const EdgeInsets.symmetric(
+                  horizontal: AppDP.dp_4, vertical: AppDP.dp_5),
+              child: Transform.scale(
+                scale: 0.6,
+                child: Checkbox(
+                  onChanged: (value) {
+                    commonData.isChecked = value!;
+                    iAction.onCheckedListener(commonData);
+                  },
+                  value: commonData.isChecked,
+                ),
+              )),
+          Expanded(
+              child: autoTextSize(" ${commonData.title}",
+                  textAlign: TextAlign.start,
+                  textStyle: Theme.of(context).textTheme.bodySmall)),
+        ],
+      );
 }
-
-
-

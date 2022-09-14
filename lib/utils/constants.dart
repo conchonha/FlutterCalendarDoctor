@@ -28,27 +28,35 @@ List<CalendarEvent> sampleEvents() {
         eventDate: today.add(Duration(days: -30)),
         eventBackgroundColor: AppColor.hcc0000),
     CalendarEvent(
-        eventName: "11111",
+        eventName: "3333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.h00cccc),
     CalendarEvent(
-        eventName: "11111",
+        eventName: "3333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.hcc0000),
     CalendarEvent(
-        eventName: "11111",
+        eventName: "3333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.h00cccc),
     CalendarEvent(
-        eventName: "11111",
+        eventName: "3333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.hcc0000),
     CalendarEvent(
-        eventName: "1111",
+        eventName: "3333",
+        eventDate: today.add(Duration(days: -7)),
+        eventBackgroundColor: AppColor.hcc0000),
+    CalendarEvent(
+        eventName: "3333",
+        eventDate: today.add(Duration(days: -7)),
+        eventBackgroundColor: AppColor.hcc0000),
+    CalendarEvent(
+        eventName: "3333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.h00cccc),
     CalendarEvent(
-        eventName: "SangTB",
+        eventName: "33333",
         eventDate: today.add(Duration(days: -7)),
         eventBackgroundColor: AppColor.hcc0000),
     CalendarEvent(
@@ -60,7 +68,7 @@ List<CalendarEvent> sampleEvents() {
         eventDate: today.add(Duration(days: 3)),
         eventBackgroundColor: AppColor.hcc0000),
     CalendarEvent(
-        eventName: "SangTB",
+        eventName: "33333",
         eventDate: today.add(Duration(days: 7)),
         eventBackgroundColor: AppColor.h00cccc),
     CalendarEvent(

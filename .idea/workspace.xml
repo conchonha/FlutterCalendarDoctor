@@ -7,24 +7,45 @@
     <list default="true" id="2e14a6d1-8954-4bb0-acd7-70cf31c6b413" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Mulish_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/ic_drown.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/base/base_list/common_action.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/base/base_list/common_data.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/base/base_list/common_list.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/base/base_widget_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/auto_size_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/cell_calendar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/day_row/day_rows.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/day_row/event_labels.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/day_row/measure_size.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/days_of_the_week.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/header_planning.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/left_planning.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/components/planning/month_year_label.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/constants/app_dimens.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/models/calendar_event.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/models/doctor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/planning_page/calendar_viewmodel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/planning_page/controller/calendar_state_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/planning_page/controller/cell_calendar_page_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/planning_page/controller/cell_height_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/planning_page/planning_viewmodel.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/utils/extension.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/flutter_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flutter_base.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/flutter_base_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/flutter_base_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/components/vertical_navigation_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/components/vertical_navigation_bar.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/constants/app_color.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/app_color.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/app_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/app_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/app_drawable.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/app_drawable.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/app_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/app_style.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/generated/l10n.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated/l10n.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/l10n/intl_en.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/intl_en.arb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/l10n/intl_vi.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/intl_vi.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/planning_page/planning_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/planning_page/planning_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
@@ -59,17 +80,20 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fonts" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/models" />
-      <recent name="$PROJECT_DIR$/lib/pages/planning_page" />
-      <recent name="$PROJECT_DIR$/lib/constants" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/lib/base/base_list" />
+      <recent name="$PROJECT_DIR$/assets/fonts" />
+      <recent name="$PROJECT_DIR$/assets/icons" />
+      <recent name="$PROJECT_DIR$/lib/components/planning/day_row" />
+      <recent name="$PROJECT_DIR$/lib/pages/planning_page/controller" />
+      <recent name="$PROJECT_DIR$/lib/components/planning" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/components/planning/day_row" />
     </key>
   </component>
   <component name="RunManager">

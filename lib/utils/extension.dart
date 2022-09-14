@@ -10,7 +10,7 @@ extension DateExtendionFormat on DateTime{
 extension ColorExtension on Color{
   Color checkDateTime(DateTime dateTime, {Color? color,double? alpha}){
     DateTime today = DateTime.now();
-    return dateTime.isBefore(today)? withOpacity(alpha ?? 0.2) : color ?? this;
+    return dateTime.isBefore(DateTime(today.year,today.month,today.day))? withOpacity(alpha ?? 0.2) : color ?? this;
   }
 }
 

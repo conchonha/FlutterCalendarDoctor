@@ -10,6 +10,7 @@ class SideNavigationItem {
   final String? icon;
   final String? title;
   bool selected;
+
   SideNavigationItem({this.icon, this.title, this.selected = false});
 }
 
@@ -17,8 +18,11 @@ class SideNavigationItemWidget extends StatefulWidget {
   final SideNavigationItem item;
   final int? index;
   final VoidCallback onTap;
-  SideNavigationItemWidget({Key? key, required this.item, this.index,required this.onTap})
+
+  SideNavigationItemWidget(
+      {Key? key, required this.item, this.index, required this.onTap})
       : super(key: key);
+
   @override
   _SideNavigationItemWidgetState createState() =>
       _SideNavigationItemWidgetState();
@@ -27,7 +31,6 @@ class SideNavigationItemWidget extends StatefulWidget {
 class _SideNavigationItemWidgetState extends State<SideNavigationItemWidget> {
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return GestureDetector(
       onTap: widget.onTap,
       child: Container(
@@ -35,7 +38,8 @@ class _SideNavigationItemWidgetState extends State<SideNavigationItemWidget> {
         height: MediaQuery.of(context).size.height * 0.08,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
-            color: widget.item.selected ? AppColor.h059669 : Colors.transparent),
+            color:
+                widget.item.selected ? AppColor.h059669 : Colors.transparent),
         child: Row(
           //crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
@@ -74,6 +78,7 @@ class SideNavigation extends StatefulWidget {
   final int initialIndex;
   final List<Widget> actions;
   final Color colors;
+
   SideNavigation(
       {Key? key,
       required this.navItems,
@@ -81,6 +86,7 @@ class SideNavigation extends StatefulWidget {
       required this.initialIndex,
       required this.actions,
       required this.colors});
+
   @override
   _SideNavigationState createState() => _SideNavigationState(
       key: key,
@@ -132,16 +138,16 @@ class _SideNavigationState extends State<SideNavigation> {
                 separatorBuilder: (context, index) {
                   return index == 4
                       ? const Divider(
-                    color: AppColor.h334155,
-                    thickness: 1,
-                  )
+                          color: AppColor.h334155,
+                          thickness: 1,
+                        )
                       : Container();
                 },
                 itemBuilder: (context, index) {
                   var item = navItems[index];
                   return GestureDetector(
                     child: SideNavigationItemWidget(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           for (var item in navItems) {
                             item.selected = false;
@@ -174,7 +180,9 @@ class _SideNavigationState extends State<SideNavigation> {
                 shrinkWrap: true,
                 primary: false,
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.1,),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.1,
+              ),
               const Align(
                 alignment: Alignment.bottomCenter,
                 child: Text(

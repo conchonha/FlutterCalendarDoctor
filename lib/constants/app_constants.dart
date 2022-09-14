@@ -6,4 +6,5 @@ class AppConstants {
   static final DateFormat dateDisplayFormat = DateFormat('dd/MM/yyyy');
   static final DateFormat dateFormat = DateFormat('dd-MM-yyyy');
   static final DateFormat dateTimeFormat = DateFormat('yyyy-MM-dd HH:mm:ss');
+  static const fontMulish = 'Mulish';
 }

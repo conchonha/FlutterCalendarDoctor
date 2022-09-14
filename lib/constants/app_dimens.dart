@@ -17,6 +17,11 @@ class AppDP{
   static const dp_11 = 11.0;
   static const dp_15 = 15.0;
   static const dp_20 = 20.0;
+  static const dp_200 = 200.0;
+  static const dp_40 = 40.0;
+  static const dp_35 = 35.0;
+  static const dp_2 = 2.0;
+  static const MAX_HEIGHT_ITEM_EVENT_DATE = 15.0;
 }
 
 class AppSP{
@@ -24,4 +29,11 @@ class AppSP{
   static const sp_13 = 13.0;
   static const sp_11 = 11.0;
   static const sp_10 = 10.0;
+  static const sp_14 = 14.0;
+  static const sp_15 = 15.0;
+  static const sp_16 = 16.0;
+  static const sp_17 = 17.0;
+  static const sp_18 = 18.0;
+  static const sp_19 = 19.0;
+  static const sp_20 = 20.0;
 }

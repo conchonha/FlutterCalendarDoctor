@@ -36,9 +36,12 @@ class AppStyle {
       fontWeight: FontWeight.normal,
       fontFamily: AppConstants.openSanFont);
 
-  static const  textStyleMenu = TextStyle(
+  static const textStyleMenu = TextStyle(
       color: AppColor.h64748B,
       fontSize: 14,
       fontWeight: FontWeight.normal,
       fontFamily: AppConstants.openSanFont);
+
+  static borderSize(BuildContext context) => BorderSide(color: Theme.of(context).dividerColor,width: 0.7);
 }
+
