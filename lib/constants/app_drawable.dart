@@ -14,4 +14,9 @@ class AppDrawable {
   static const iconAccount = '$pathIcon/ic_user.svg';
   static const iconLogout = '$pathIcon/ic_logout.svg';
   static const iconDrown = '$pathIcon/ic_drown.svg';
+  static const iconDropdown = '$pathIcon/ic_dropdown.svg';
+  static const iconLocation = '$pathIcon/ic_location.svg';
+  static const iconClock = '$pathIcon/ic_clock.svg';
+  static const iconCreate = '$pathIcon/ic_create.svg';
+
 }
